@@ -1,5 +1,5 @@
 *** Writeup: TryHackMe - Poster Machine ***
-
+  
 Target IP: 10.48.165.15 (Sesuaikan jika IP berubah)
 Difficulty: Easy
 Objective: Get User & Root Flags
