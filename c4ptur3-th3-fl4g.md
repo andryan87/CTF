@@ -279,6 +279,7 @@ Gunakan Perintah binwalk:
 Alat ini sangat efektif untuk melihat apakah ada file lain yang "menempel" di balik gambar tersebut. Jalankan perintah:
 
 ┌──(kali㉿DESKTOP)-[~]
+
 └─$ ```binwalk meme_1559010886025.jpg```
 
 DECIMAL       HEXADECIMAL     DESCRIPTION
@@ -290,6 +291,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 74629         0x12385         Zlib compressed data, default compression
 
 ┌──(kali㉿DESKTOP-K316IDI)-[~]
+
 └─$ ```binwalk -e meme_1559010886025.jpg```
 
 DECIMAL       HEXADECIMAL     DESCRIPTION
@@ -298,6 +300,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 74629         0x12385         Zlib compressed data, default compression
 
 ┌──(kali㉿DESKTOP-K316IDI)-[~]
+
 └─$ binwalk -e meme_1559010886025.jpg
 
 DECIMAL       HEXADECIMAL     DESCRIPTION
@@ -312,13 +315,16 @@ WARNING: Extractor.execute failed to run external extractor 'unrar -x '%e'': [Er
 WARNING: One or more files failed to extract: either no utility was found or it's unimplemented
 
 ┌──(kali㉿DESKTOP)-[~]
+
 └─$ ```cd _meme_1559010886025.jpg.extracted```
 
 ┌──(kali㉿DESKTOP)-[~/_meme_1559010886025.jpg.extracted]
+
 └─$ ```ls```
 122A7.rar  12385  12385.zlib
 
-┌──(kali㉿DESKTOP-K316IDI)-[~/_meme_1559010886025.jpg.extracted]
+┌──(kali㉿DESKTOP)-[~/_meme_1559010886025.jpg.extracted]
+
 └─$ ```unrar e 122A7.rar```
 
 UNRAR 7.20 freeware      Copyright (c) 1993-2026 Alexander Roshal
@@ -328,14 +334,23 @@ Extracting from 122A7.rar
 Extracting  hackerchat.png                                            OK
 All OK
 
-hackerchat.png
-Silakan masukkan jawaban tersebut. Jika kamu diminta untuk mencari "isi" atau flag selanjutnya, kamu perlu memeriksa file tersebut. Karena formatnya adalah .png, kamu bisa mencoba melihat isinya dengan membuka gambar tersebut atau melakukan analisis steganografi lagi pada hackerchat.png menggunakan:
+```hackerchat.png```
+
+┌──(kali㉿DESKTOP)-[~/_meme_1559010886025.jpg.extracted]
+
+└─$ ```ls```
+122A7.rar  12385  12385.zlib  hackerchat.png
+
+Silakan masukkan jawaban tersebut. :```hackerchat.png```
+
+Jika kamu diminta untuk mencari "isi" atau flag selanjutnya, kamu perlu memeriksa file tersebut. Karena formatnya adalah .png, kamu bisa mencoba melihat isinya dengan membuka gambar tersebut atau melakukan analisis steganografi lagi pada hackerchat.png menggunakan:
 strings hackerchat.png
 Atau unggah ke Aperi'Solve lagi.
 
 <img width="1335" height="607" alt="image" src="https://github.com/user-attachments/assets/dcc255eb-21e8-46a3-ad44-b0642ad2e595" />
 
 Exiftool
+
 ```
 Bit Depth	8
 Color Type	RGB with Alpha
@@ -461,5 +476,14 @@ Image: ../de4502de0ae70d4a95d0e304f1b24736.png
 <img width="529" height="247" alt="image" src="https://github.com/user-attachments/assets/89577f2f-405a-4575-9766-decfe8518506" />
 
 <img width="1141" height="645" alt="image" src="https://github.com/user-attachments/assets/f24e6c92-c66a-490b-8330-e0386781b8a7" />
-``` ***AHH_YOU_FOUND_ME!).*** ```
+
+Download and get 'inside' the file. What is the first filename & extension?
+```
+hackerchat.png
+```
+Get inside the archive and inspect the file carefully. Find the hidden text.
+
+``` 
+AHH_YOU_FOUND_ME!
+```
 
