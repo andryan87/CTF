@@ -1,4 +1,7 @@
+
 # [c4ptur3-th3-fl4g](https://tryhackme.com/room/c4ptur3th3fl4g)
+
+# ***Translation & Shifting — Task 1***
 Pertanyaan 1: `c4n y0u c4p7u23 7h3 f149?`
 Ini disebut leet speak, di mana teks ditulis dengan ejaan yang dimodifikasi menggunakan angka.
 Mengganti angka dengan huruf yang mirip secara visual:
