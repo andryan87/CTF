@@ -233,33 +233,15 @@ Hmm, pada langkah ini saya rasa petunjuk di pertanyaan kita sebelumnya adalah ro
 
 Kemudian, ubah dari desimal,`Let's make this a bit trickier...`
 
-Answer:
+# *** Spectrograms — Task 2 ***
 
-## Spectrograms
-Spektrogram adalah representasi visual dari spektrum frekuensi suatu sinyal saat berubah seiring waktu.
+Berikut adalah panduan singkat untuk menyelesaikan tugas tersebut:
+Unduh File: Ambil file audio .wav yang disediakan di Task 2.
+Gunakan Alat Analisis:
+Sonic Visualiser: Buka file tersebut, lalu pilih menu Layer > Add Spectrogram.
+Audacity: Buka file, klik tanda panah di samping nama trek, dan ubah tampilan dari Waveform menjadi Spectrogram.
+Online: Anda juga bisa menggunakan alat berbasis web seperti Aperi'Solve atau fitur analisis spektral di dCode.
+Temukan Flag: Setelah tampilan spektrogram muncul, teks atau "flag" akan terlihat secara visual di antara frekuensi suara tersebut
 
-Ketika diterapkan pada sinyal audio, spektrogram kadang-kadang disebut sonograf, sidik suara, atau voicegram.
+<img width="1366" height="731" alt="image" src="https://github.com/user-attachments/assets/8e1b02f9-a543-4b60-9d3f-fbf3afab1ceb" />
 
-Ketika data direpresentasikan dalam plot 3D, plot tersebut dapat disebut air terjun (waterfall).
-
-Menggunakan Audacity, saya mendapatkan jawabannya.
-
-## Steganography
-
-Steganografi adalah praktik menyembunyikan file, pesan, gambar, atau video di dalam file, pesan, gambar, atau video lain.
-
-atau Anda bisa menggunakan `steghide –extract -sf stegosteg.jpg`
-
-## Security through obscurity
-
-Pertanyaannya mengatakan untuk mengunduh file dan memeriksa ekstensinya, jadi itu bukan gambar biasa.
-
-Saya sudah mencoba dengan perintah strings atau membukanya dengan notepad.
-
-Sangat jelas bahwa ada 2 flag dalam tampilan
-
-atau Anda bisa menggunakan `binwalk –extract meme.jpg`
-
-Prinsipnya dapat dipahami secara sederhana sebagai file terkompresi yang berisi konten gambar dan file lain.
-
-Tentu saja, informasi yang dapat dibaca dalam teks biasa akan ditampilkan saat menggunakan string.
